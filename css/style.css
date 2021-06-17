@@ -1,0 +1,38 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  list-style: none;
+  text-decoration: none;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+:root {
+  --dark-blue-1: #181f2a;
+  --dark-blue-2: #1c2431;
+  --dark-blue-3: #202a3c;
+  --dark-blue-4: #0b1523;
+  --cyan: #65e2d9;
+  --blue: #339ecc;
+  --light-red: #ff4242;
+  --white: #ffffff;
+  --primary-font-family: 'Open Sans', sans-serif;
+  --secondary-font-family: 'Raleway', sans-serif;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: var(--primary-font-family);
+  line-height: 1.7;
+  font-size: 1.4rem;
+  color: var(--white);
+}

@@ -1,0 +1,49 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: none;
+	list-style: none;
+	text-decoration: none;
+	box-sizing: inherit;
+}
+
+:root {
+	// For the main background.
+	--dark-blue-1: #181f2a;
+	// For intro and email sign up background.
+	--dark-blue-2: #1c2431;
+	// For testimonials background
+	--dark-blue-3: #202a3c;
+	// For footer background
+	--dark-blue-4: #0b1523;
+
+	// Inside call-to-action gradient
+	--cyan: #65e2d9;
+	// Inside call-to-action gradient
+	--blue: #339ecc;
+	// Error
+	--light-red: #ff4242;
+  // White
+  --white: #ffffff;
+
+  // Typography
+  // For Headings, Call-to-actions, Header Navigation
+  // Available font weights are 400 and 700.
+  --primary-font-family: 'Open Sans', sans-serif;
+  --secondary-font-family: 'Raleway', sans-serif;
+}
+
+html {
+	box-sizing: border-box;
+	font-size: 62.5%;
+}
+
+body {
+	font-family: var(--primary-font-family);
+  line-height: 1.7;
+  font-size: 1.4rem;
+  color: var(--white);
+}
