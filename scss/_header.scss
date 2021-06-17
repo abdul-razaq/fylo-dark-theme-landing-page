@@ -1,0 +1,29 @@
+.header {
+  width: 90%;
+  min-width: 90%;
+  margin: 5rem auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo-box {
+  height: 4.5rem;
+}
+
+.logo {
+  display: block;
+  height: 100%;
+}
+
+.navigation {
+  width: 25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation__item {
+}
+
+.navigation__link {
+}

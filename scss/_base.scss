@@ -6,8 +6,12 @@
 	border: none;
 	outline: none;
 	list-style: none;
-	text-decoration: none;
 	box-sizing: inherit;
+}
+
+a:link, a:visited {
+  color: var(--white);
+  text-decoration: none;
 }
 
 :root {
@@ -26,14 +30,14 @@
 	--blue: #339ecc;
 	// Error
 	--light-red: #ff4242;
-  // White
-  --white: #ffffff;
+	// White
+	--white: #ffffff;
 
-  // Typography
-  // For Headings, Call-to-actions, Header Navigation
-  // Available font weights are 400 and 700.
-  --primary-font-family: 'Open Sans', sans-serif;
-  --secondary-font-family: 'Raleway', sans-serif;
+	// Typography
+	// For Headings, Call-to-actions, Header Navigation
+	// Available font weights are 400 and 700.
+	--primary-font-family: "Open Sans", sans-serif;
+	--secondary-font-family: "Raleway", sans-serif;
 }
 
 html {
@@ -43,7 +47,8 @@ html {
 
 body {
 	font-family: var(--primary-font-family);
-  line-height: 1.7;
-  font-size: 1.4rem;
-  color: var(--white);
+	line-height: 1.7;
+	font-size: 1.4rem;
+	color: var(--white);
+	background-color: var(--dark-blue-1);
 }
