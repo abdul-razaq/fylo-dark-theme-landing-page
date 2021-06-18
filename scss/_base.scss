@@ -34,9 +34,10 @@ a:link, a:visited {
 	--white: #ffffff;
 
 	// Typography
+  // For body
+	--primary-font-family: "Open Sans", sans-serif;
 	// For Headings, Call-to-actions, Header Navigation
 	// Available font weights are 400 and 700.
-	--primary-font-family: "Open Sans", sans-serif;
 	--secondary-font-family: "Raleway", sans-serif;
 }
 

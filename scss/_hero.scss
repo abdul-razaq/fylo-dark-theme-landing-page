@@ -1,0 +1,54 @@
+.hero {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+
+	.image-box {
+    max-height: 50%;
+		max-width: 50%;
+	}
+
+	&__image {
+		height: 100%;
+		width: 100%;
+	}
+
+	&__content {
+		width: 50%;
+		text-align: center;
+	}
+
+	&__heading {
+		font-family: var(--secondary-font-family);
+		font-size: 2.5vw;
+		font-weight: 700;
+	}
+
+	&__description {
+		line-height: 1.5;
+		font-size: 1.6vw;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.hero {
+		.image-box {
+			max-height: 90%;
+			max-width: 90%;
+		}
+
+		&__content {
+			width: 90%;
+			text-align: center;
+		}
+		&__heading {
+			font-size: 2.3rem;
+		}
+
+		&__description {
+			line-height: 1.7;
+			font-size: 1.6rem;
+		}
+	}
+}
