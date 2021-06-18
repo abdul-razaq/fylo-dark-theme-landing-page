@@ -173,6 +173,7 @@ padding-horizontal-xl {
 .btn {
   font-family: var(--secondary-font-family);
   font-size: 1.8rem;
+  display: inline-block;
   padding: 2rem 10rem;
   font-weight: 700;
   color: var(--white);
@@ -293,7 +294,43 @@ padding-horizontal-xl {
   font-size: 1.6vw;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1150px) {
+  .hero .image-box {
+    max-height: 60%;
+    max-width: 60%;
+  }
+  .hero__content {
+    width: 70%;
+    text-align: center;
+  }
+  .hero__heading {
+    font-size: 3rem;
+  }
+  .hero__description {
+    line-height: 1.7;
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .hero .image-box {
+    max-height: 80%;
+    max-width: 80%;
+  }
+  .hero__content {
+    width: 90%;
+    text-align: center;
+  }
+  .hero__heading {
+    font-size: 3rem;
+  }
+  .hero__description {
+    line-height: 1.7;
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
   .hero .image-box {
     max-height: 90%;
     max-width: 90%;
@@ -303,7 +340,7 @@ padding-horizontal-xl {
     text-align: center;
   }
   .hero__heading {
-    font-size: 2.3rem;
+    font-size: 2.7rem;
   }
   .hero__description {
     line-height: 1.7;
