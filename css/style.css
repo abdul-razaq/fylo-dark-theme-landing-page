@@ -170,6 +170,22 @@ padding-horizontal-xl {
   padding: 0 8rem;
 }
 
+.btn {
+  font-family: var(--secondary-font-family);
+  font-size: 1.8rem;
+  padding: 2rem 10rem;
+  font-weight: 700;
+  color: var(--white);
+}
+
+.primary__button {
+  border-radius: 5rem;
+  background-image: -webkit-gradient(linear, left top, right top, from(var(--cyan)), to(var(--blue)));
+  background-image: linear-gradient(to right, var(--cyan), var(--blue));
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .header {
   width: 90%;
   min-width: 90%;
