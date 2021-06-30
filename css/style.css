@@ -10,7 +10,8 @@
           box-sizing: inherit;
 }
 
-a:link, a:visited {
+a:link,
+a:visited {
   color: var(--white);
   text-decoration: none;
 }
@@ -40,6 +41,12 @@ body {
   font-size: 1.4rem;
   color: var(--white);
   background-color: var(--dark-blue-1);
+}
+
+@media screen and (max-width: 455px) {
+  html {
+    font-size: 0.5rem;
+  }
 }
 
 .mb-sm {
@@ -106,67 +113,67 @@ body {
   padding-top: 8rem;
 }
 
-margin-vertical-sm {
+.margin-vertical-sm {
   margin: 2rem 0;
 }
 
-margin-vertical-md {
+.margin-vertical-md {
   margin: 4rem 0;
 }
 
-margin-vertical-lg {
+.margin-vertical-lg {
   margin: 6rem 0;
 }
 
-margin-vertical-xl {
+.margin-vertical-xl {
   margin: 8rem 0;
 }
 
-margin-horizontal-sm {
+.margin-horizontal-sm {
   margin: 0 2rem;
 }
 
-margin-horizontal-md {
+.margin-horizontal-md {
   margin: 0 4rem;
 }
 
-margin-horizontal-lg {
+.margin-horizontal-lg {
   margin: 0 6rem;
 }
 
-margin-horizontal-xl {
+.margin-horizontal-xl {
   margin: 0 8rem;
 }
 
-padding-vertical-sm {
+.padding-vertical-sm {
   padding: 2rem 0;
 }
 
-padding-vertical-md {
+.padding-vertical-md {
   padding: 4rem 0;
 }
 
-padding-vertical-lg {
+.padding-vertical-lg {
   padding: 6rem 0;
 }
 
-padding-vertical-xl {
+.padding-vertical-xl {
   padding: 8rem 0;
 }
 
-padding-horizontal-sm {
+.padding-horizontal-sm {
   padding: 0 2rem;
 }
 
-padding-horizontal-md {
+.padding-horizontal-md {
   padding: 0 4rem;
 }
 
-padding-horizontal-lg {
+.padding-horizontal-lg {
   padding: 0 6rem;
 }
 
-padding-horizontal-xl {
+.padding-horizontal-xl {
   padding: 0 8rem;
 }
 
@@ -177,6 +184,11 @@ padding-horizontal-xl {
   padding: 2rem 10rem;
   font-weight: 700;
   color: var(--white);
+  cursor: pointer;
+}
+
+.btn:active {
+  outline: none;
 }
 
 .primary__button {
@@ -185,6 +197,7 @@ padding-horizontal-xl {
   background-image: linear-gradient(to right, var(--cyan), var(--blue));
   background-size: cover;
   background-repeat: no-repeat;
+  overflow: hidden;
 }
 
 .header {
@@ -231,11 +244,11 @@ padding-horizontal-xl {
 
 @media screen and (max-width: 500px) {
   .logo-box {
-    height: 2.5rem;
+    height: 3rem;
   }
   .navigation {
-    width: 18rem;
-    font-size: 1.2rem;
+    width: 22rem;
+    font-size: 1.6rem;
   }
 }
 
@@ -266,6 +279,9 @@ padding-horizontal-xl {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+  background-color: var(--dark-blue-2);
+  width: 100%;
+  max-width: 100%;
 }
 
 .hero .image-box {
@@ -285,7 +301,7 @@ padding-horizontal-xl {
 
 .hero__heading {
   font-family: var(--secondary-font-family);
-  font-size: 2.5vw;
+  font-size: 2.3vw;
   font-weight: 700;
 }
 
@@ -344,6 +360,52 @@ padding-horizontal-xl {
   }
   .hero__description {
     line-height: 1.7;
-    font-size: 1.6rem;
+    font-size: 2rem;
+  }
+}
+
+.features {
+  padding: 10rem 0;
+  max-width: 100rem;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(45rem, min-content))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(45rem, -webkit-min-content));
+      grid-template-columns: repeat(auto-fit, minmax(45rem, min-content));
+  gap: 10rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.features .feature {
+  padding: 2rem;
+}
+
+.features .feature__icon {
+  margin-bottom: 1.5rem;
+}
+
+.features .feature__heading {
+  font-family: var(--secondary-font-family);
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.features .feature__description {
+  font-size: 1.7rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .features {
+    -ms-grid-columns: (minmax(40rem, min-content))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(40rem, -webkit-min-content));
+        grid-template-columns: repeat(auto-fit, minmax(40rem, min-content));
   }
 }

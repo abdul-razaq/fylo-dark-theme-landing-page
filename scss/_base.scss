@@ -9,9 +9,10 @@
 	box-sizing: inherit;
 }
 
-a:link, a:visited {
-  color: var(--white);
-  text-decoration: none;
+a:link,
+a:visited {
+	color: var(--white);
+	text-decoration: none;
 }
 
 :root {
@@ -34,7 +35,7 @@ a:link, a:visited {
 	--white: #ffffff;
 
 	// Typography
-  // For body
+	// For body
 	--primary-font-family: "Open Sans", sans-serif;
 	// For Headings, Call-to-actions, Header Navigation
 	// Available font weights are 400 and 700.
@@ -52,4 +53,10 @@ body {
 	font-size: 1.4rem;
 	color: var(--white);
 	background-color: var(--dark-blue-1);
+}
+
+@media screen and (max-width: 455px) {
+	html {
+		font-size: 0.5rem;
+	}
 }

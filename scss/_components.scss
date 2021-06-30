@@ -5,6 +5,11 @@
 	padding: 2rem 10rem;
 	font-weight: 700;
   color:var(--white);
+	cursor: pointer;
+
+	&:active {
+		outline: none;
+	}
 }
 
 .primary__button {
@@ -12,4 +17,5 @@
 	background-image: linear-gradient(to right, var(--cyan), var(--blue));
 	background-size: cover;
 	background-repeat: no-repeat;
+	overflow: hidden;
 }

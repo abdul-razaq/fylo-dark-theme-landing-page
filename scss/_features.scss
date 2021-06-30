@@ -1,0 +1,35 @@
+.features {
+	padding: 10rem 0;
+	max-width: 100rem;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(45rem, min-content));
+	gap: 10rem;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+
+	.feature {
+		padding: 2rem;
+		&__icon {
+			margin-bottom: 1.5rem;
+		}
+
+		&__heading {
+			font-family: var(--secondary-font-family);
+			font-size: 2rem;
+			font-weight: 700;
+			margin-bottom: 1rem;
+		}
+
+		&__description {
+			font-size: 1.7rem;
+		}
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	.features {
+		grid-template-columns: repeat(auto-fit, minmax(40rem, min-content));
+	}
+}

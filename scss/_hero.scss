@@ -3,6 +3,9 @@
 	flex-direction: column;
 	align-items: center;
 	text-align: center;
+	background-color: var(--dark-blue-2);
+	width: 100%;
+	max-width: 100%;
 
 	.image-box {
 		max-height: 50%;
@@ -21,7 +24,7 @@
 
 	&__heading {
 		font-family: var(--secondary-font-family);
-		font-size: 2.5vw;
+		font-size: 2.3vw;
 		font-weight: 700;
 	}
 
@@ -92,7 +95,7 @@
 
 		&__description {
 			line-height: 1.7;
-			font-size: 1.6rem;
+			font-size: 2rem;
 		}
 	}
 }
