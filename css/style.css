@@ -12,7 +12,6 @@
 
 a:link,
 a:visited {
-  color: var(--white);
   text-decoration: none;
 }
 
@@ -200,6 +199,28 @@ body {
   overflow: hidden;
 }
 
+.secondary-btn {
+  color: var(--cyan);
+  border-bottom: 1px solid var(--cyan);
+  padding-bottom: 0.5rem;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.secondary-btn__text {
+  font-size: 1.8rem;
+}
+
+.secondary-btn__icon {
+  height: 2rem;
+  margin-left: .5rem;
+  margin-top: .2rem;
+}
+
 .header {
   width: 90%;
   min-width: 90%;
@@ -239,6 +260,7 @@ body {
 }
 
 .navigation__link {
+  color: var(--white);
   letter-spacing: 1px;
 }
 

@@ -4,7 +4,7 @@
 	display: inline-block;
 	padding: 2rem 10rem;
 	font-weight: 700;
-  color:var(--white);
+	color: var(--white);
 	cursor: pointer;
 
 	&:active {
@@ -18,4 +18,22 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 	overflow: hidden;
+}
+
+.secondary-btn {
+	color: var(--cyan);
+	border-bottom: 1px solid var(--cyan);
+	padding-bottom: 0.5rem;
+	display: inline-flex;
+	align-items: center;
+
+	&__text {
+		font-size: 1.8rem;
+	}
+
+	&__icon {
+		height: 2rem;
+		margin-left: .5rem;
+		margin-top: .2rem;
+	}
 }
