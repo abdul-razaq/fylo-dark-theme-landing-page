@@ -33,7 +33,41 @@
 
 	&__icon {
 		height: 2rem;
-		margin-left: .5rem;
-		margin-top: .2rem;
+		margin-left: 0.5rem;
+		margin-top: 0.2rem;
+	}
+}
+
+.testimonial {
+	max-width: 30%;
+	&__text {
+		font-size: 1.8rem;
+	}
+
+	.author {
+		min-width: 100%;
+		display: flex;
+		align-items: center;
+
+		.avatar-box {
+			height: 3.5rem;
+			border-radius: 5rem;
+			overflow: hidden;
+			margin-right: 1rem;
+		}
+
+		&__avatar {
+			display: block;
+			height: 100%;
+		}
+
+		&__name {
+			font-size: 1.3rem;
+		}
+
+		&__description {
+			display: block;
+			margin-top: -0.3rem;
+		}
 	}
 }
