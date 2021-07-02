@@ -38,13 +38,33 @@
 	}
 }
 
+.features {
+	.feature {
+		padding: 2rem;
+		&__icon {
+			margin-bottom: 1.5rem;
+		}
+
+		&__heading {
+			font-family: var(--secondary-font-family);
+			font-size: 2rem;
+			font-weight: 700;
+			margin-bottom: 1rem;
+		}
+
+		&__description {
+			font-size: 1.7rem;
+		}
+	}
+}
+
 .testimonial {
 	background-color: var(--dark-blue-3);
 	padding-top: 4rem;
 	padding-bottom: 3rem;
 	padding-left: 3rem;
 	padding-right: 3rem;
-	border-radius: 5px;
+	border-radius: 1rem;
 	box-shadow: 2px 6px 5px var(--dark-blue-2);
 
 	&:not(:last-child) {
@@ -99,5 +119,51 @@
 			font-size: 1.5rem;
 			letter-spacing: 0.1rem;
 		}
+	}
+}
+
+.email-signup {
+	width: 65vw;
+	margin: 0 auto;
+	background-color: var(--dark-blue-2);
+	box-shadow: 2px 6px 5px var(--dark-blue-2);
+	padding: 5rem 8rem;
+	border-radius: 1rem;
+	margin-bottom: 20rem;
+	text-align: center;
+	font-family: var(--secondary-font-family);
+
+	&__heading {
+		font-size: 4rem;
+		font-weight: 550;
+	}
+
+	&__description {
+		font-size: 1.7rem;
+	}
+
+	&__form {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__input {
+		flex-basis: 65%;
+		padding: 2rem 4rem;
+		border-radius: 5rem;
+		caret-color: var(--dark-blue-2);
+
+		&::-webkit-input-placeholder {
+			font-family: var(--secondary-font-family);
+			font-size: 1.6rem;
+			color: #777;
+		}
+	}
+
+	&__btn {
+		flex: 0 0 1;
+		text-transform: capitalize;
+		padding: 1.8rem 3rem;
 	}
 }
