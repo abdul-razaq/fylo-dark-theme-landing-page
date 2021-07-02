@@ -39,9 +39,23 @@
 }
 
 .testimonial {
-	max-width: 30%;
+	background-color: var(--dark-blue-3);
+	padding-top: 4rem;
+	padding-bottom: 3rem;
+	padding-left: 3rem;
+	padding-right: 3rem;
+	border-radius: 5px;
+	box-shadow: 2px 6px 5px var(--dark-blue-2);
+
+	&:not(:last-child) {
+		margin-right: 3rem;
+	}
+
 	&__text {
-		font-size: 1.8rem;
+		font-family: var(--secondary-font-family);
+		font-size: 1.4rem;
+		line-height: 1.7;
+		letter-spacing: 0.12rem;
 	}
 
 	.author {
@@ -68,6 +82,22 @@
 		&__description {
 			display: block;
 			margin-top: -0.3rem;
+		}
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.testimonial {
+		margin: 0 auto;
+		margin-bottom: 5rem;
+
+		&:not(:last-child) {
+			margin-right: 0;
+		}
+
+		&__text {
+			font-size: 1.5rem;
+			letter-spacing: 0.1rem;
 		}
 	}
 }
