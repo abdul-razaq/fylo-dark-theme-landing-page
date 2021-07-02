@@ -1,7 +1,31 @@
 .testimonials {
-  background-color: orangered;
-  width: 80%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
+	width: 85%;
+	margin: 0 auto;
+	display: flex;
+	margin-top: 20rem;
+	margin-bottom: 50rem;
+	padding: 0 2rem;
+	position: relative;
+
+	.quote {
+		position: absolute;
+		top: -3.5rem;
+		left: 1rem;
+		z-index: -1;
+
+		&__img {
+			height: 100%;
+		}
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.testimonials {
+		flex-direction: column;
+
+		.quote {
+			top: -5rem;
+			left: 3.5rem;
+		}
+	}
 }
