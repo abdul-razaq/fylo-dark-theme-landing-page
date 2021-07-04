@@ -387,12 +387,28 @@ body {
   color: #777;
 }
 
+.email-signup__input::-moz-selection {
+  background-color: var(--dark-blue-2);
+  color: #fff;
+}
+
+.email-signup__input::selection {
+  background-color: var(--dark-blue-2);
+  color: #fff;
+}
+
 .email-signup__btn {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 1;
           flex: 0 0 1;
   text-transform: capitalize;
   padding: 1.8rem 3rem;
+}
+
+@media screen and (min-width: 1441px) {
+  .email-signup {
+    width: 50vw;
+  }
 }
 
 .header {
