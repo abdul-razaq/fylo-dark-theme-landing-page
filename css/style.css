@@ -208,6 +208,15 @@ body {
   padding: 0 8rem;
 }
 
+.logo-box {
+  height: 4.5rem;
+}
+
+.logo {
+  display: block;
+  height: 100%;
+}
+
 .btn {
   font-family: var(--secondary-font-family);
   font-size: 1.8rem;
@@ -472,15 +481,6 @@ body {
           align-items: center;
 }
 
-.logo-box {
-  height: 4.5rem;
-}
-
-.logo {
-  display: block;
-  height: 100%;
-}
-
 .navigation {
   width: 25rem;
   font-family: var(--secondary-font-family);
@@ -547,7 +547,6 @@ body {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  background-color: var(--dark-blue-2);
   width: 100%;
   max-width: 100%;
 }
@@ -785,4 +784,8 @@ body {
     top: -5rem;
     left: 3.5rem;
   }
+}
+
+.footer {
+  background-color: var(--dark-blue-4);
 }
