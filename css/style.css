@@ -369,6 +369,10 @@ body {
   margin-bottom: 20rem;
   text-align: center;
   font-family: var(--secondary-font-family);
+  z-index: 100;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  margin-top: -30rem;
 }
 
 .email-signup__heading {
@@ -788,4 +792,116 @@ body {
 
 .footer {
   background-color: var(--dark-blue-4);
+  padding: 15rem 10rem;
+  padding-top: 25rem;
+  z-index: 10;
+}
+
+.footer .footer-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__logo {
+  margin-bottom: -5rem;
+}
+
+.footer .location {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  font-size: 1.6rem;
+  margin-right: 6rem;
+  margin-top: 2rem;
+}
+
+.footer .location__icon {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin: 1rem 2.5rem 0 0;
+  height: 2rem;
+}
+
+.footer .contact {
+  width: 15rem;
+  margin-right: 15rem;
+  font-size: 1.25rem;
+}
+
+.footer .contact .phone {
+  margin-bottom: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .contact .phone__icon {
+  margin-right: 2rem;
+}
+
+.footer .contact .email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__navigation {
+  width: 20rem;
+  margin-top: 9rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.footer__navigation ul li {
+  margin-bottom: 1.3rem;
+}
+
+.footer__navigation ul li a {
+  color: #fff;
+  font-size: 1.6rem;
+}
+
+.footer .social {
+  margin-top: -3rem;
+  margin-left: 12rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer .social__icon {
+  margin-right: 1.3rem;
+  font-size: 1.6rem;
+  padding: 1rem;
+  background-color: var(--dark-blue-2);
+  border: 1.5px solid #fff;
+  border-radius: 50%;
 }
