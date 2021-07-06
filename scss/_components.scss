@@ -144,6 +144,9 @@
 	margin-bottom: 20rem;
 	text-align: center;
 	font-family: var(--secondary-font-family);
+	z-index: 100;
+	transform: translateY(100%);
+	margin-top: -30rem;
 
 	&__heading {
 		font-size: 4rem;
