@@ -454,6 +454,8 @@ body {
   .email-signup {
     width: 90vw;
     padding: 5rem 4rem;
+    -webkit-transform: translateY(23vh);
+            transform: translateY(23vh);
   }
   .email-signup__heading {
     font-size: 2.5rem;
@@ -759,7 +761,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   margin-top: 10rem;
-  margin-bottom: 7rem;
+  margin-bottom: 10rem;
   padding: 0 2rem;
   position: relative;
 }
@@ -782,6 +784,7 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
     margin-top: 25rem;
+    margin-bottom: -5rem;
   }
   .testimonials .quote {
     top: -5rem;
@@ -925,6 +928,9 @@ body {
 }
 
 @media screen and (max-width: 929px) {
+  .footer__logo {
+    margin-top: 23vh;
+  }
   .footer .social {
     -ms-flex-item-align: end;
         align-self: flex-end;
@@ -967,6 +973,9 @@ body {
 }
 
 @media screen and (max-width: 375px) {
+  .footer__logo {
+    margin-top: 30vh;
+  }
   .footer .social {
     -ms-flex-item-align: end;
         align-self: flex-end;

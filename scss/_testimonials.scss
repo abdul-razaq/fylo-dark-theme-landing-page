@@ -3,7 +3,7 @@
 	margin: 0 auto;
 	display: flex;
 	margin-top: 10rem;
-	margin-bottom: 7rem;
+	margin-bottom: 10rem;
 	padding: 0 2rem;
 	position: relative;
 
@@ -23,6 +23,7 @@
 	.testimonials {
 		flex-direction: column;
 		margin-top: 25rem;
+		margin-bottom: -5rem;
 
 		.quote {
 			top: -5rem;

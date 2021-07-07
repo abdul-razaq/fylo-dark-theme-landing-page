@@ -1,7 +1,7 @@
 .footer {
 	background-color: var(--dark-blue-4);
 	padding: 7vw;
-  padding-right: 5vw;
+	padding-right: 5vw;
 	padding-bottom: 8vw;
 
 	.footer-container {
@@ -12,8 +12,8 @@
 	}
 
 	&__logo {
-    margin-top: 14vh;
-    height: 5rem;
+		margin-top: 14vh;
+		height: 5rem;
 	}
 
 	.location {
@@ -100,7 +100,6 @@
 
 @media screen and (max-width: 1200px) {
 	.footer {
-
 		.location {
 			flex-basis: 100%;
 			margin-bottom: 2rem;
@@ -118,6 +117,9 @@
 
 @media screen and (max-width: 929px) {
 	.footer {
+		&__logo {
+			margin-top: 23vh;
+		}
 		.social {
 			align-self: flex-end;
 			margin-top: 7rem;
@@ -159,6 +161,9 @@
 
 @media screen and (max-width: 375px) {
 	.footer {
+		&__logo {
+			margin-top: 30vh;
+		}
 		.social {
 			align-self: flex-end;
 
