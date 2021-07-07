@@ -1,24 +1,24 @@
 .footer {
 	background-color: var(--dark-blue-4);
-	padding: 15rem 10rem;
-  padding-top: 25rem;
-  z-index: 10;
+	padding: 10vw;
+	// padding-top: 25vw;
+	padding-bottom: 8vw;
+	z-index: 10;
 
 	.footer-container {
 		display: flex;
 		flex-wrap: wrap;
-    align-content: space-between;
+		align-content: space-between;
 		align-items: center;
 	}
 
 	&__logo {
-    margin-bottom: -5rem;
 	}
 
 	.location {
 		flex-basis: 30%;
 		display: flex;
-    flex-grow: 1;
+		flex-grow: 1;
 		font-size: 1.6rem;
 		margin-right: 6rem;
 		margin-top: 2rem;
@@ -35,10 +35,10 @@
 
 	.contact {
 		width: 15rem;
-		margin-right: 15rem;
+		margin-right: 12rem;
 		font-size: 1.25rem;
 
-		.phone {
+		&__phone {
 			margin-bottom: 1.5rem;
 			display: flex;
 			align-items: center;
@@ -47,10 +47,11 @@
 				margin-right: 2rem;
 			}
 
-			&__number {
+			.phone-number {
+				margin-left: 2rem;
 			}
 		}
-		.email {
+		&__email {
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
@@ -69,7 +70,6 @@
 		justify-content: space-between;
 		flex-wrap: wrap;
 
-
 		& ul {
 			li {
 				margin-bottom: 1.3rem;
@@ -82,17 +82,88 @@
 	}
 
 	.social {
-    margin-top: -3rem;
+		margin-top: -3rem;
 		margin-left: 12rem;
 		display: flex;
 
 		&__icon {
 			margin-right: 1.3rem;
 			font-size: 1.6rem;
-      padding: 1rem;
+			padding: 1rem;
 			background-color: var(--dark-blue-2);
 			border: 1.5px solid #fff;
-      border-radius: 50%;
+			border-radius: 50%;
+		}
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	.footer {
+
+		.location {
+			flex-basis: 100%;
+			margin-bottom: 2rem;
+		}
+	}
+}
+
+@media screen and (min-width: 1201px) {
+	.footer {
+		.footer-container {
+			margin-top: -6rem;
+		}
+	}
+}
+
+@media screen and (max-width: 929px) {
+	.footer {
+		.social {
+			align-self: flex-end;
+			margin-top: 7rem;
+		}
+	}
+}
+
+@media screen and (max-width: 760px) {
+	.footer {
+		padding: 3rem;
+		&__logo {
+			height: 6rem;
+			width: 6rem;
+		}
+		.footer-container {
+			flex-basis: 100%;
+			margin-top: 3rem;
+		}
+		&__navigation {
+			flex-direction: column;
+
+			& > * {
+				margin-bottom: 5rem;
+			}
+		}
+		.contact {
+			&__phone {
+				margin-bottom: 2.5rem;
+			}
+			.phone-number {
+				margin-left: 2rem;
+			}
+		}
+		.social {
+			align-self: flex-end;
+		}
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.footer {
+		.social {
+			align-self: flex-end;
+
+			&__icon {
+				font-size: 1.8rem;
+			}
 		}
 	}
 }
