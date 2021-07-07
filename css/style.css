@@ -287,7 +287,7 @@ body {
   padding-bottom: 3rem;
   padding-left: 3rem;
   padding-right: 3rem;
-  border-radius: 1rem;
+  border-radius: .5rem;
   -webkit-box-shadow: 2px 6px 5px var(--dark-blue-2);
           box-shadow: 2px 6px 5px var(--dark-blue-2);
 }
@@ -366,10 +366,10 @@ body {
           box-shadow: 2px 6px 5px var(--dark-blue-2);
   padding: 5rem 8rem;
   border-radius: 1rem;
-  margin-bottom: 20rem;
   text-align: center;
   font-family: var(--secondary-font-family);
-  z-index: 100;
+  -webkit-transform: translateY(15vh);
+          transform: translateY(15vh);
 }
 
 .email-signup__heading {
@@ -758,8 +758,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 20rem;
-  margin-bottom: 18rem;
+  margin-top: 10rem;
+  margin-bottom: 7rem;
   padding: 0 2rem;
   position: relative;
 }
@@ -781,6 +781,7 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-top: 25rem;
   }
   .testimonials .quote {
     top: -5rem;
@@ -790,9 +791,9 @@ body {
 
 .footer {
   background-color: var(--dark-blue-4);
-  padding: 10vw;
+  padding: 7vw;
+  padding-right: 5vw;
   padding-bottom: 8vw;
-  z-index: 10;
 }
 
 .footer .footer-container {
@@ -806,6 +807,11 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.footer__logo {
+  margin-top: 14vh;
+  height: 5rem;
 }
 
 .footer .location {
