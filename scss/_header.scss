@@ -17,6 +17,14 @@
 
 .navigation__item {
 	font-size: 1.8rem;
+	transition: all .1s ease-out;
+
+	&:active {
+		font-weight: 600;
+		text-decoration: underline;
+		text-decoration-color: var(--white);
+		text-decoration-thickness: 1.8px;
+	}
 }
 
 .navigation__link {

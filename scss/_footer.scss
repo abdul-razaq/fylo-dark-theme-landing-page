@@ -80,12 +80,19 @@
 		display: flex;
 
 		&__icon {
+			color: var(--white);
 			margin-right: 1.3rem;
 			font-size: 1.6rem;
 			padding: 1rem;
 			background-color: var(--dark-blue-2);
-			border: 1.5px solid #fff;
+			border: 1.5px solid var(--white);
 			border-radius: 50%;
+			transition: all 0.1s ease-out;
+
+			&:active {
+				color: var(--cyan);
+				border-color: var(--cyan);
+			}
 		}
 	}
 }

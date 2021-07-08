@@ -16,17 +16,20 @@
 	color: var(--white);
 	cursor: pointer;
 
-	&:active {
-		outline: none;
-	}
-}
+	&--primary {
+		border-radius: 5rem;
+		background-image: linear-gradient(to right, var(--cyan), var(--blue));
+		background-size: cover;
+		background-repeat: no-repeat;
+		overflow: hidden;
+		transition: all 0.1s ease-out;
 
-.primary__button {
-	border-radius: 5rem;
-	background-image: linear-gradient(to right, var(--cyan), var(--blue));
-	background-size: cover;
-	background-repeat: no-repeat;
-	overflow: hidden;
+		&:active {
+			outline: none;
+			background-image: none;
+			background-color: var(--cyan);
+		}
+	}
 }
 
 .secondary-btn {
@@ -35,6 +38,7 @@
 	padding-bottom: 0.5rem;
 	display: inline-flex;
 	align-items: center;
+	transition: all 0.1s ease-out;
 
 	&__text {
 		font-size: 1.8rem;
@@ -44,6 +48,15 @@
 		height: 2rem;
 		margin-left: 0.5rem;
 		margin-top: 0.2rem;
+	}
+
+	&:active {
+		color: var(--white);
+		border-bottom-color: var(--white);
+
+		.secondary-btn__icon {
+			color: var(--white);
+		}
 	}
 }
 
@@ -73,7 +86,7 @@
 	padding-bottom: 3rem;
 	padding-left: 3rem;
 	padding-right: 3rem;
-	border-radius: .5rem;
+	border-radius: 0.5rem;
 	box-shadow: 2px 6px 5px var(--dark-blue-2);
 
 	&:not(:last-child) {

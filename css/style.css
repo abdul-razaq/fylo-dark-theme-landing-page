@@ -22,7 +22,7 @@ a:visited {
   --dark-blue-4: #0b1523;
   --cyan: #65e2d9;
   --blue: #339ecc;
-  --light-red: #ff4242;
+  --error: #ff4242;
   --white: #ffffff;
   --primary-font-family: "Open Sans", sans-serif;
   --secondary-font-family: "Raleway", sans-serif;
@@ -227,17 +227,21 @@ body {
   cursor: pointer;
 }
 
-.btn:active {
-  outline: none;
-}
-
-.primary__button {
+.btn--primary {
   border-radius: 5rem;
   background-image: -webkit-gradient(linear, left top, right top, from(var(--cyan)), to(var(--blue)));
   background-image: linear-gradient(to right, var(--cyan), var(--blue));
   background-size: cover;
   background-repeat: no-repeat;
   overflow: hidden;
+  -webkit-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out;
+}
+
+.btn--primary:active {
+  outline: none;
+  background-image: none;
+  background-color: var(--cyan);
 }
 
 .secondary-btn {
@@ -250,6 +254,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out;
 }
 
 .secondary-btn__text {
@@ -260,6 +266,15 @@ body {
   height: 2rem;
   margin-left: 0.5rem;
   margin-top: 0.2rem;
+}
+
+.secondary-btn:active {
+  color: var(--white);
+  border-bottom-color: var(--white);
+}
+
+.secondary-btn:active .secondary-btn__icon {
+  color: var(--white);
 }
 
 .features .feature {
@@ -287,7 +302,7 @@ body {
   padding-bottom: 3rem;
   padding-left: 3rem;
   padding-right: 3rem;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   -webkit-box-shadow: 2px 6px 5px var(--dark-blue-2);
           box-shadow: 2px 6px 5px var(--dark-blue-2);
 }
@@ -500,6 +515,16 @@ body {
 
 .navigation__item {
   font-size: 1.8rem;
+  -webkit-transition: all .1s ease-out;
+  transition: all .1s ease-out;
+}
+
+.navigation__item:active {
+  font-weight: 600;
+  text-decoration: underline;
+  -webkit-text-decoration-color: var(--white);
+          text-decoration-color: var(--white);
+  text-decoration-thickness: 1.8px;
 }
 
 .navigation__link {
@@ -906,12 +931,20 @@ body {
 }
 
 .footer .social__icon {
+  color: var(--white);
   margin-right: 1.3rem;
   font-size: 1.6rem;
   padding: 1rem;
   background-color: var(--dark-blue-2);
-  border: 1.5px solid #fff;
+  border: 1.5px solid var(--white);
   border-radius: 50%;
+  -webkit-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out;
+}
+
+.footer .social__icon:active {
+  color: var(--cyan);
+  border-color: var(--cyan);
 }
 
 @media screen and (max-width: 1200px) {
